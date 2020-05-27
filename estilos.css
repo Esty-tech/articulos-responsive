@@ -1,0 +1,75 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+}
+.encabezado, .contenido, .contenido-lateral, .pie-pagina{
+    padding: 16px 32px;
+}
+.contenido, .contenido-lateral, .pie-pagina{
+    float: left;
+    box-sizing: border-box;
+}
+.encabezado{
+    background-color:rgb(96, 96, 212);
+    height: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+.contenido{
+    width: 70%;
+    background-color: rgba(212, 184, 155, 0.651);
+}
+.contenido-lateral{
+    width: 30%;
+    background-color:rgba(28, 28, 136, 0.418);
+    height: auto;
+}
+.post{
+    background-color:whitesmoke;
+    height: auto;
+    margin-bottom: 16px;
+    padding: 8px 5px;
+}
+.pie-pagina{
+    width: 100%;
+    background-color: rgba(212, 184, 155, 0.651);
+    margin-top: 16px;
+    border-top: 3px solid rgb(5, 5, 83);
+    height: 50px;
+}
+@media screen and (min-width:780px) and (max-width:1024px) {
+    .encabezado{
+        background-color: skyblue;
+    }
+    .contenido-lateral, .contenido{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:450px) and (max-width:780px){
+.encabezado{
+    background-color:skyblue ;
+    font-size: 25px;
+    text-align: center;
+}
+.contenido, .contenido-lateral{
+    width: 100%;
+}
+}
+
+@media (min-width:200px) and (max-width:450px){
+    .contenido, .contenido-lateral{
+        width: 100%;
+    }
+    .header{
+        height: 40px;
+    }
+.encabezado{
+    background-color: skyblue ;
+    font-size: 25px;
+    text-align: left;
+}
+
+}
